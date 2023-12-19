@@ -188,7 +188,7 @@
 
 @media (min-width: 800px) and (max-width: 1280px) {
   .login-container {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, fr);
     row-gap: 40px;
   }
 
@@ -205,7 +205,7 @@
   }
 
   .form-group {
-    padding-top: 10%;
+    padding: 0%;
   }
 
   .user-icon {

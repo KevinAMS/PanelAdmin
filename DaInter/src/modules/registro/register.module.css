@@ -11,16 +11,15 @@
 
 @keyframes moveGradient {
   0% {
-    background-position: 0% 0%; 
+    background-position: 0% 0%;
   }
   50% {
     background-position: 0% 100%;
   }
   100% {
-    background-position: 0% 0%; 
+    background-position: 0% 0%;
   }
 }
-
 
 .register-form {
   background: #ffffff;
@@ -75,7 +74,7 @@
   width: 100%;
   margin: 10px;
   font-size: 15px;
-  transition: background-color 0.3s ease; 
+  transition: background-color 0.3s ease;
 }
 
 .register-button:hover {
@@ -85,7 +84,6 @@
 .register-button:active {
   background-color: #003366;
 }
-
 
 .register-button2 {
   background-color: #ffffff;
@@ -106,12 +104,11 @@
 }
 
 .register-button2:active {
-  background-color: #003366; 
-  color: #fff; 
+  background-color: #003366;
+  color: #fff;
 }
 
-
-.icon{
+.icon {
   fill: #ffffff;
   margin-right: auto;
   margin-left: 5%;
@@ -146,20 +143,29 @@
   left: 40%;
 }
 
-.select{
+.select {
   height: 35px;
   width: 310px;
   border-radius: 4%;
 }
 
-.div-select{
+.div-select {
   margin-left: 30px;
   margin-bottom: 20px;
   margin-top: 0;
 }
 
-@media (max-width: 800px){
-  .register-container{
+@media (min-width: 800px) and (max-width: 1280px) {
+  .register-container {
+    height: 100%;
+  }
+  .icon{
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 800px) {
+  .register-container {
     overflow: hidden;
   }
 
@@ -173,17 +179,17 @@
     font-family: Arial;
     margin-bottom: 80px;
   }
-  
+
   .form-group {
     margin-bottom: 10px;
     padding-left: 15px;
   }
 
-  .div-select{
+  .div-select {
     margin-left: 8%;
   }
-  
-  .select{
+
+  .select {
     width: 88%;
   }
 }
