@@ -3,12 +3,14 @@ import style from "./button.module.css";
 const Button = ({
   text = "vacio",
   name,
+  title,
   onClick,
   disabled = false,
   customStyles,
   type,
   children,
 }: {
+  title?: string;
   text?: string;
   onClick?: (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void;
   disabled?: boolean;
@@ -28,6 +30,7 @@ const Button = ({
       className={`${style["button"]} ${customStyles}`}
       type={type}
       name={name}
+      title={title}
     >
       {children}
       {text}

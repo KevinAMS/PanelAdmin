@@ -346,6 +346,7 @@ const Insert = () => {
               resetFileLabel={resetFileLabels}
             />
           </div>
+          <div className={`${style["buttonsd"]}`}>
           <Button
             name="guardar"
             type="submit"
@@ -356,6 +357,7 @@ const Insert = () => {
             }`}
             disabled={isButtonDisabled}
           />
+          </div>
         </div>
         <div className={`${style["form-group"]}`}></div>
       </form>

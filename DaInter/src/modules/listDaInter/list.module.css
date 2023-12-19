@@ -153,7 +153,11 @@ th {
 }
 
 @media (max-width: 800px) {
-  
+
+  .content{
+   
+  }
+
   .user-item {
     margin: 10px;
   }

@@ -190,6 +190,10 @@
     margin-bottom: 20px;
   }
   
+  .buttonsd{
+    margin-left: 27%;
+  }
+
   .tittle {
     font-family: Arial;
     font-size: 30px; 
@@ -199,12 +203,13 @@
   }
   
   .fixed {
-    margin-top: 20px; 
+    margin-top: 20px;
   }
   
   .input {
     width: 90%;
     margin: 10px;
+    margin-left: 3%;
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #000000;
@@ -225,7 +230,7 @@
     border: none;
     border-radius: 15px;
     height: 35px;
-    width: 100%; 
+    width: 60%; 
     font-family: Arial;
     font-size: 18px; 
     font-weight: bold;

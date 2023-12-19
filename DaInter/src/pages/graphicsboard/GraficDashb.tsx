@@ -83,6 +83,8 @@ const cargarDatos = async () => {
     <div className={`${style["welcome"]}`}>
       {usuarioAutenticado && <Saludo nombre={usuarioAutenticado.name} />}
     </div>
+
+    <div  className={`${style["cards-container-mob"]}`}>
     <div className={`${style["cards-container"]}`}>
       <TotalAlumnosCard totalAlumnos={totalAlumnos} />
       <IngresosPorDiaCard ingresosPorDia={ingresosPorDia} />
@@ -98,6 +100,7 @@ const cargarDatos = async () => {
       <div className={`${style["grafic-school"]}`}>
         <GraficaBarra />
       </div>
+    </div>
     </div>
   </div>
   

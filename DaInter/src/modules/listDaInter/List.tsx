@@ -311,6 +311,7 @@ const List: React.FC<ListProps> = ({ setCurrentComponent }) => {
                   userData.open ? style["open"] : ""
                 }`}
                 onClick={() => toggleUserDetails(index)}
+                title={`${userData.nombre} ${userData.apellidoPaterno} ${userData.apellidoMaterno}`}
               >
                 <div className={`${style["items-content"]}`}>
                   <p className={`${style["user-text"]}`} id="dainter">
@@ -393,6 +394,7 @@ const List: React.FC<ListProps> = ({ setCurrentComponent }) => {
                                       <Button
                                         name="actaNacimiento"
                                         text=""
+                                        title="Acta De Nacimiento"
                                         onClick={(e) =>{
                                           e.stopPropagation();
                                           openPDFInNewTab(
@@ -416,6 +418,7 @@ const List: React.FC<ListProps> = ({ setCurrentComponent }) => {
                                       <Button
                                         name="ine"
                                         text=""
+                                        title="Ine"
                                         onClick={(e) =>{
                                           e.stopPropagation();
                                           openPDFInNewTab("ine", index)
@@ -433,6 +436,7 @@ const List: React.FC<ListProps> = ({ setCurrentComponent }) => {
                                       <Button
                                         name="comprobanteDomicilio"
                                         text=""
+                                        title="Comprobante De Domicilio"
                                         onClick={(e) =>{
                                           e.stopPropagation();
                                           openPDFInNewTab(
@@ -456,6 +460,7 @@ const List: React.FC<ListProps> = ({ setCurrentComponent }) => {
                                       <Button
                                         name="curp"
                                         text=""
+                                        title="Curp"
                                         onClick={(e) =>{
                                           e.stopPropagation();
                                           openPDFInNewTab("curp", index)
@@ -473,6 +478,7 @@ const List: React.FC<ListProps> = ({ setCurrentComponent }) => {
                                         />
                                       </Button>
                                       <Button
+                                        title="CV"
                                         name="cv"
                                         text=""
                                         onClick={(e) =>{
@@ -488,6 +494,7 @@ const List: React.FC<ListProps> = ({ setCurrentComponent }) => {
                                         <Cv className={`${style["cv-icon"]}`} />
                                       </Button>
                                       <Button
+                                        title="Horario"
                                         name="hr"
                                         text=""
                                         onClick={(e) =>{
