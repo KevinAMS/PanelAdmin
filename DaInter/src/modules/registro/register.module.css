@@ -157,3 +157,33 @@
   margin-bottom: 20px;
   margin-top: 0;
 }
+
+@media (max-width: 800px){
+  .register-container{
+    overflow: hidden;
+  }
+
+  .register-form {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    height: 600px;
+    font-family: Arial;
+    margin-bottom: 80px;
+  }
+  
+  .form-group {
+    margin-bottom: 10px;
+    padding-left: 15px;
+  }
+
+  .div-select{
+    margin-left: 8%;
+  }
+  
+  .select{
+    width: 88%;
+  }
+}
