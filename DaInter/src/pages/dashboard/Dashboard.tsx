@@ -29,6 +29,12 @@ const Dashboard = () => {
   const [userRole, setUserRole] = useState("");
   const [isAuthenticated, setIsAuthenticated] = useState(false);
 
+  const [isSidebarVisible, setIsSidebarVisible] = useState(false);
+
+  const toggleSidebar = () => {
+    setIsSidebarVisible(!isSidebarVisible);
+  };
+
   useEffect(() => {
     const checkAuthentication = async () => {
       const getAllUsersFromLocalForage = async (): Promise<
@@ -154,6 +160,13 @@ const Dashboard = () => {
     <div className={`${style["dashboard"]}`}>
       <div className={`${style["navbar-dashboard"]}`}>
         <DaCodes className={`${style["dacodes-icon"]}`} />
+        <Button
+          text=""
+          customStyles={`${style["toggle-button"]}`}
+          onClick={toggleSidebar}
+        >
+          ☰
+        </Button>
         <h1 className={`${style["title"]}`}>{animatedTitle}</h1>
         <div>
           <Button
@@ -165,7 +178,11 @@ const Dashboard = () => {
         </div>
       </div>
       <div className={`${style["dashboard-content"]}`}>
-        <div className={`${style["sidebar"]}`}>
+        <div
+          className={`${style["sidebar"]} ${
+            isSidebarVisible ? style["visible"] : style["hidden"]
+          }`}
+        >
           <div className={`${style["buttons-content"]}`}>
             <div className={`${style["divselect"]}`}>
               <Button
@@ -179,6 +196,7 @@ const Dashboard = () => {
                 onClick={() => {
                   setSelectedSection("mi-dashb");
                   updateSectionTitle("Dashboard");
+                  toggleSidebar();
                 }}
               >
                 <Profile
@@ -202,6 +220,7 @@ const Dashboard = () => {
                 onClick={() => {
                   setSelectedSection("agregar-estudiantes");
                   updateSectionTitle("Registro DaInter");
+                  toggleSidebar();
                 }}
               >
                 <Control
@@ -225,6 +244,7 @@ const Dashboard = () => {
                 onClick={() => {
                   setSelectedSection("mostrar-lista");
                   updateSectionTitle("DaInters");
+                  toggleSidebar();
                 }}
               >
                 <Book
@@ -249,6 +269,7 @@ const Dashboard = () => {
                   onClick={() => {
                     setSelectedSection("mostrar-usuarios");
                     updateSectionTitle("Usuarios");
+                    toggleSidebar();
                   }}
                 >
                   <UsersIcon
