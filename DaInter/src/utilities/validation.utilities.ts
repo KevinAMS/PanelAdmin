@@ -34,7 +34,7 @@ export const validacionEmail = (email: string) => {
   if (!emailValid.test(email)) {
     return {
     error: true,
-    message: "Ingrese un correo electronico valido"
+    message: "Ingrese un correo valido"
     };
   }
   return {

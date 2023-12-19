@@ -147,7 +147,7 @@
     cursor: pointer;
     font-weight: bold;
     transition: background-color 0.3s ease, border 0.3s ease;
-    width: 15%;
+    width: 25%;
   }
 
   .singIn-button-mobile:hover {
